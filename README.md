@@ -1,5 +1,5 @@
 # Speech-Emotion-Recognition
-*Speech Emotion Recognition using CNN* <b>
+*Speech Emotion Recognition using CNN* <br>
 This was our 3rd year Mini Project. We've built a Speech to Emotion Classifier using a Convolutional Neural Network.
 
 Emotion recognition is the part of speech recognition that is rapidly becoming popular. Although there are methods to recognize emotion using machine learning techniques, this project attempts to use deep learning to recognize the emotions from data.
