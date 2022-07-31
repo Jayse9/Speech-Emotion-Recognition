@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" accept="audio/*" capture id="recorder" />
+<audio id="player" controls></audio>
+<script>
+    const player = document.getElementById('player');
+  
+    const handleSuccess = function (stream) {
+      if (window.URL) {
+        player.srcObject = stream;
+      } else {
+        player.src = stream;
+      }
+    };
+  
+    navigator.mediaDevices
+      .getUserMedia({audio: true, video: false})
+      .then(handleSuccess);
+  </script>
+</audio>
+</body>
+</html>
